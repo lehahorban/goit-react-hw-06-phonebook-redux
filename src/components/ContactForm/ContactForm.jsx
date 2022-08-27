@@ -11,6 +11,7 @@ function ContactForm({ onAddContact }) {
     onAddContact({ name: name, number: number });
     setName('');
     setNumber('');
+    console.log('object');
   };
 
   const onChange = event => {
