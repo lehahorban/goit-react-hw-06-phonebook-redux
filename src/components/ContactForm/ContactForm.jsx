@@ -8,6 +8,7 @@ function ContactForm({ onAddContact }) {
 
   const onSubmit = event => {
     event.preventDefault();
+
     onAddContact({ name: name, number: number });
     setName('');
     setNumber('');
@@ -55,8 +56,8 @@ function ContactForm({ onAddContact }) {
   );
 }
 
-// ContactForm.propTypes = {
-//   onAddContact: PropTypes.func.isRequired,
-// };
+ContactForm.propTypes = {
+  onAddContact: PropTypes.func.isRequired,
+};
 
 export default ContactForm;

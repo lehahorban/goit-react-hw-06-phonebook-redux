@@ -1,5 +1,9 @@
-import { ADD_CONTACTS, REMOVE_CONTACTS, FILTER_CONTACTS } from './types';
-import shortid, { generate } from 'shortid';
+import {
+  ADD_CONTACTS,
+  REMOVE_CONTACTS,
+ 
+} from './contacts-types';
+import { generate } from 'shortid';
 
 export const addContacts = payload => {
   return {
@@ -18,9 +22,3 @@ export const removeContacts = payload => {
   };
 };
 
-export const filterContacts = payload => {
-  return {
-    type: FILTER_CONTACTS,
-    payload,
-  };
-};
