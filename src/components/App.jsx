@@ -14,6 +14,7 @@ import { getFilter, getFilterContacts } from '../redux/filter/filter-selectors';
 function App() {
   const contacts = useSelector(getFilterContacts);
   const filter = useSelector(getFilter);
+  console.log(contacts);
 
   const dispatch = useDispatch();
 
